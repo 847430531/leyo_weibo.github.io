@@ -1,0 +1,331 @@
+/*注册登录框部分开始,部分样式在右侧登录那模块那里*/
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    z-index: 2;
+    top:0;
+    display: none;
+}
+.regist{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-top: 2px solid #FA7F40;
+    margin:150px auto;
+    position: relative;
+}
+.smallbox{
+    margin:40px 120px;
+    text-align: center;
+}
+.smallbox span{
+    font:400 18px/18px "微软雅黑";
+    border-bottom: 2px solid #FA7F40;
+    display: block;
+    margin-bottom:20px;
+    padding-bottom: 5px;
+}
+.smallbox input{
+    border:1px solid #ccc;
+    height:32px;
+    width: 100%;
+    margin:6px 0;
+    text-indent:15px;
+    color: #808080;
+    font:500 12px/32px "微软雅黑";
+}
+.smallbox button{
+    background-color: #ff8140;
+    border:1px solid #f77c3d;
+    color: #fff;
+    width: 100%;
+    height:34px;
+    border-radius:2px;
+    margin:5px 0;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top:5px;
+    right:10px;
+    font:500 24px/24px "微软雅黑";
+    cursor: pointer;
+}
+.close:hover{
+    color: #FA7F40;
+}
+/*注册登录框结束*/
+/*中间部分*/
+.main{
+    margin:15px 0 10px 90px;
+}
+/*左边导航栏*/
+nav{
+    float: left;
+    width:110px;
+    margin-right:30px;
+    position: fixed;
+    top:50px;
+}
+nav li{
+    margin-bottom:3px;
+}
+nav li a{
+    display: block;
+    float: none;
+    height:40px;
+    width: 110px;
+    line-height:40px;
+    text-align: center;
+    color: #000;
+    font-size:18px;
+    border-radius:3px;
+}
+nav ul .active,nav li a:hover{
+    background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+    color: #fff;
+}
+/*左导结束*/
+
+/*中间部分开始*/
+/*轮播图*/
+.slider{
+    float: left;
+    width: 660px;
+    margin-left:140px;
+    margin-right:30px;
+    margin-top:50px;
+}
+.slider .sliderimg{
+    height:300px;
+    position: relative;
+    overflow: hidden;
+}
+.sliderimg .sliderbox{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1000%;
+    height: 100%;
+    background-color: #000;
+}
+.sliderbox img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.sliderbox li{
+    width: 660px;
+    height: 300px;
+    float: left;
+}
+.sliderimg .imgtxt{
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top:265px;
+    left:0px;
+    padding:0 0 0 10px;
+    color: #fff;
+    font:400 20px/35px "微软雅黑";
+}
+
+.circle{
+    position: absolute;
+    top:280px;
+    right:0px;
+}
+.circle li{
+    display: block;
+    width:8px;
+    height:8px;
+    background-color: #fff;
+    border-radius:4px;
+    margin: 0 10px 0 0;
+}
+.slider .current{
+    background-color: #fa7d3c;
+}
+/*轮播图结束*/
+/*主体加载部分开始*/
+.center{
+    margin:10px 0;
+}
+.detail{
+    padding:10px 0;
+    position: relative;
+    border-bottom:1px solid #e5e5e5;
+}
+.detail img{
+    width: 158px;
+    height: 102px;
+    cursor: pointer;
+}
+.detail .detail-content{
+    height:75px;
+    position: absolute;
+    top:10px;
+    left:165px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.detail-content h4{
+    padding-bottom:15px;
+}
+.detail-content h4 a{
+    color: #333;
+}
+.detail .detail-content span{
+    font-size:14px;
+}
+.detail .info{
+    width: 100%;
+}
+.info a,span{
+    color: #808080;
+    font-size:12px;
+}
+.info .fl{
+    float: left;
+    cursor: pointer;
+}
+.info .fr{
+    float: right;
+    cursor: pointer;
+}
+/*主体部分结束*/
+/*中间部分结束*/
+
+/*右侧部分开始*/
+/*右侧登录框*/
+.right{
+    float: left;
+    width: 300px;
+    margin-right:85px;
+    margin-top:50px;
+}
+.login{
+    width: 300px;
+    height: 286px;
+    background-color: #F2F2F5;
+    padding:20px;
+    margin-bottom:20px;
+}
+.whitebox{
+    background-color: #fff;
+    padding:5px 15px 0 15px;
+}
+/*.prilogin{
+    display: none;
+}*/
+.whitebox .txt{
+    text-align: center;
+    margin-bottom:10px;
+}
+.txt a{
+    font-size:14px;
+    width: 50%;
+    color: #808080;
+    float: left;
+    line-height:30px;
+    border-bottom:1px solid #e6e6e6;
+}
+.login .cur,.modal .cur{
+    border-bottom:3px solid #FA7D3C;
+    font-weight: 700;
+}
+.whitebox input{
+    border:1px solid #ccc;
+    height:32px;
+    width: 100%;
+    margin:6px 0;
+    text-indent:15px;
+    color: #808080;
+    font:500 12px/32px "微软雅黑";
+}
+.remember input{
+    width: 13px;
+    height: 13px;
+}
+.whitebox span{
+    color: #808080;
+    font:500 12px/32px "微软雅黑";
+}
+.remember span:nth-of-type(2){
+    cursor: pointer;
+    float: right;
+}
+.remember span:nth-of-type(2):hover{
+    color: #eb7350;
+}
+.whitebox button{
+    background-color: #ff8140;
+    border:1px solid #f77c3d;
+    color: #fff;
+    width: 100%;
+    height:34px;
+    border-radius:2px;
+    margin:5px 0;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+.reg{
+    border-bottom:1px solid #E6E6E6;
+    padding:3px 0;
+}
+.reg a,.phoneimg a{
+    color: #eb7350;
+    font:500 12px/32px "微软雅黑";
+}
+.phoneimg{
+    margin-top:20px;
+    text-align: center;
+    display: none;
+}
+.imgbox{
+    width: 175px;
+    border:1px solid #e3e3e3;
+    padding-top:15px;
+    text-align: center;
+    margin:0 auto;
+}
+.imgbox img{
+    width: 150px;
+    height: 150px;
+}
+.imgbox p{
+    color: #333;
+    font:500 12px/32px "微软雅黑";
+}
+/*登录部分结束*/
+
+/*微博新鲜事*/
+.news{
+    width: 100%;
+    background-color: #F2F2F5;
+    border-top:1px solid #FA2F2F;
+    padding:20px;
+}
+.right .news h2{
+    color: #333;
+    font:700 18px/18px "微软雅黑";
+}
+.news .nabbox{
+    margin-top:20px;
+    height:78px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.news .nabbox img:nth-child(1){
+    float: left;
+}
+.news .nabbox img:nth-child(2){
+    float: right;
+}
+
+/*微博新鲜事结束*/
+/*右侧部分结束*/

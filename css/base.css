@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img ,header{ margin:0; padding:0; }
+fieldset,button,input { border:none; padding:0;margin:0;outline-style:none; }
+/*outline-style是选中后的外边框，将其去掉，ff没显示chrome有显示，所以统一去掉*/
+ul, ol { list-style:none; }
+li{float: left;}
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body{
+    background-color: #fff;
+    width:100%;
+    height: 100%;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+/*清除浮动*/
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+/*公共类*/
+.container {  /*版心 提取 */
+    width: 1150px;margin:0 auto;
+}
+a{text-decoration:none;
+    color: #666;}
+
+/*====================头部部分开始=====================*/
+header{
+    line-height:48px;
+    height:48px;
+    width: 100%;
+    border-top:2px solid #FA7D3C;
+    border-bottom:1px solid #F2F2F2;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background-color: rgba(255,255,255,1);
+}
+.header-left{
+    float: left;
+    height:48px;
+    position: relative;
+}
+
+.header-left .icon_weibo{
+    color: #666;
+    font:400 17px/48px "微软雅黑";
+    display: inline-block;
+    margin:5px 0;
+    height:38px;
+    width: 130px;
+    background: url("../images/weibo.png") no-repeat center center;
+    background-size:70%;
+    float: left;
+}
+.header-left input{
+    float: left;
+    height:30px;
+    width: 470px;
+    border: 1px solid #ccc;
+    margin:8px 0;
+    color: #808080;
+    font:400 13px/30px "微软雅黑";
+    text-indent:10px;
+}
+.header-left .search{
+    position: absolute;
+    right:5px;
+    top:0;
+    display: inline-block;
+    width:50px;
+    height:30px;
+    color: #666;
+    font:400 14px/30px "微软雅黑";
+    text-align: center;
+    margin:8px 0;
+}
+.header-right{
+    float: right;
+}
+.header-right li a{
+    color: #666;
+    font:400 14px/14px "微软雅黑";
+}
+.header-right li a:hover{
+    color: #FA7D3C;
+}
+.header-right .nav{
+    float: left;
+}
+
+.header-right .nav li{
+    /*width: 80px;*/
+    height:48px;
+    font:400 14px/48px "微软雅黑";
+    text-align: center;
+    margin-right:50px;
+}
+.header-right .account{
+    float: right;
+}
+.header-right .account li{
+    margin:0 10px;
+}
+.header-right .account li:nth-child(2){
+    width: 0;
+    border-right:1px solid #ccc;
+    height:15px;
+    margin:15px 0;
+}
+/*头部结束*/
+
+/*底部开始*/
+footer{
+    background-color: #fff!important;
+    height:161px;
+}
+/*四模块*/
+.box{
+    width: 920px;
+    margin:10px auto;
+    padding:10px 0 10px 80px;
+}
+.box dl{
+    float: left;
+    height: 131px;
+    margin-right:60px;
+}
+.box dt{
+    font-size: 16px;
+    padding: 0 0 15px;
+    white-space: nowrap;
+    width: 138px;
+    overflow: hidden;
+}
+.box dd{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.box dd a,.links a,.links span {
+    display: inline-block;
+    margin: 0 20px 5px 0;
+    font:400 12px/15px "微软雅黑";
+    color: #666;
+}
+.box dl:nth-child(1) a{
+    width: 48px;
+}
+.box dl:nth-child(2) a{
+    vertical-align: top;
+}
+.box dl:nth-child(3) a{
+    width: 60px;
+}
+.box dd a:hover,.links a:hover{
+    color: #eb7350;
+}
+
+.links{
+    height:75px;
+    width: 100%;
+    background-color: #F2F2F5;
+    float: left;
+    text-align: center;
+    padding:20px 0 45px;
+}
+.links .warn a{
+    position: relative;
+    padding-left: 25px;
+}
+.links i{
+    position: absolute;
+    top:0;
+    left:0;
+    display: inline-block;
+    background: url("../images/icon.png") no-repeat -100px -300px;
+    width: 20px;
+    height:20px;
+}
+/*底部结束*/
+
+/*返回顶部*/
+.toTop{
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,.2);
+    color: #fff;
+    font:900 36px/38px "宋体";
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom:100px;
+    transform: rotate(90deg);
+    display: none;
+    cursor: pointer;
+}
+.toTop:hover{
+    background: rgba(0,0,0,.4);
+}

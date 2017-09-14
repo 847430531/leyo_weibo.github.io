@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>码农微博-随时随地发现新鲜事</title>
+    <link rel="shortcut icon" type="images/x-icon" href="weibo.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--顶部部分-->
+<header class="clearfix">
+    <div class="container">
+        <div class="header-left">
+            <a href="javascript:void(0);" class="icon_weibo"></a>
+            <input type="text" placeholder="搜索热点排行榜">
+            <a href="javascript:void(0);" class="search">搜索</a>
+        </div>
+        <div class="header-right">
+            <ul class="nav">
+                <li><a href="javascript:void(0);">首页</a></li>
+                <li><a href="javascript:void(0);">视频</a></li>
+                <li><a href="javascript:void(0);">发现</a></li>
+                <li><a href="javascript:void(0);">游戏</a></li>
+            </ul>
+            <ul class="account">
+                <li id="reg_b"><a href="javascript:void(0);">注册</a></li>
+                <li></li>
+                <li><a href="javascript:void(0);">未登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+
+
+<!--注册框开始-->
+<div class="modal">
+    <div class="regist">
+        <span class="close">&times;</span>
+        <div class="smallbox">
+                <span>帐号注册</span>
+                <input type="text" id="regusername" placeholder="请输入要注册的账号！">
+                <input type="password" id="regpassword" placeholder="请设置您的密码！">
+                <input type="password" id="regpassword1" placeholder="请再次输入您的密码！">
+                <button type="button" id="regbtn">提交</button>
+        </div>
+    </div>
+</div>
+
+<!--注册框结束-->
+
+
+<!--中间部分-->
+<div class="main clearfix">
+    <!--左边导航栏-->
+    <nav>
+        <ul>
+            <li><a href="javascript:;" class="active">热门</a></li>
+            <li><a href="javascript:;">明星</a></li>
+            <li><a href="javascript:;">头条</a></li>
+            <li><a href="javascript:;">视频</a></li>
+            <li><a href="javascript:;">新鲜事</a></li>
+            <li><a href="javascript:;">榜单</a></li>
+            <li><a href="javascript:;">搞笑</a></li>
+            <li><a href="javascript:;">社会</a></li>
+            <li><a href="javascript:;">情感</a></li>
+            <li><a href="javascript:;">时尚</a></li>
+            <li><a href="javascript:;">军事</a></li>
+            <li><a href="javascript:;">美女</a></li>
+            <li><a href="javascript:;">体育</a></li>
+            <li><a href="javascript:;">动漫</a></li>
+        </ul>
+    </nav>
+    <!--轮播图,中间内容-->
+    <div class="slider">
+        <div class="sliderimg">
+            <div class="sliderbox">
+                <ul>
+                </ul>
+            </div>
+            <div class="imgtxt">
+                庆祝中国人民解放军建立90周年，阅兵正在直播
+            </div>
+            <ul class="circle">
+            </ul>
+        </div>
+        <!--轮播图结束-->
+        <!--中间部分-->
+        <div class="center">
+            <!--<div class="detail clearfix">
+                <img src="images/img1.jpg" alt="">
+                <div class="detail-content">
+                    <h4>震惊！广财某宿舍竟然发生这种事...</h4>
+                    <span>昨夜凌晨，广财某宿舍竟然没有按时关灯，竟把等开足了一夜，强无敌！昨夜凌晨，广财某宿舍竟然没有按时关灯，竟把等开足了一夜，强无敌！...</span>
+                </div>
+                <div class="info">
+                    <div class="fl">
+                        <a href="javascript:;">广财震惊部</a>
+                        <span>7月30日 17：39</span>
+                    </div>
+                    <div class="fr">
+                        <span>评论：1235</span>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+<!--右侧部分-->
+    <!--右登录-->
+    <div class="right">
+        <div class="login">
+            <div class="whitebox">
+                <div class="txt clearfix">
+                    <a href="" class="cur">帐号登录</a>
+                    <a href="">安全登录</a>
+                </div>
+                <div class="prilogin">
+                    <form action="">
+                        <input type="text" placeholder="邮箱/会员帐号/手机号" id="username">
+                        <input type="password" placeholder="请输入密码" id="password">
+                        <div class="remember">
+                            <input type="checkbox" checked="checked" id="expires"><span>记住我</span>
+                            <span>忘记密码</span>
+                        </div>
+                        <button type="button" id="login">登录</button>
+                    </form>
+                    <div class="reg">
+                        <span>还没有微博？</span>
+                        <a href="javascript:void(0);" id="reg_a">立即注册！</a>
+                    </div>
+                    <div class="other">
+                        <span>其他登录：</span>
+                        <img src="images/other.jpg" alt="">
+                    </div>
+                </div>
+                <div class="phoneimg">
+                    <div class="imgbox">
+                        <img src="images/login.png" alt="">
+                        <p>请打开微博客户端“扫一扫”</p>
+                    </div>
+                    <span>还没有微博？</span>
+                    <a href="">立即注册！</a>
+                </div>
+            </div>
+        </div>
+        <!--登录部分结束-->
+
+        <!--微博新鲜事开始-->
+        <div class="news">
+            <!--<h2>微博新鲜事</h2>
+            <div class="nabbox">
+                <img src="images/nba.png" alt="">
+                <img src="images/nba.png" alt="">
+                <a href="">
+                    8-2周二
+                </a>
+                <div><span>火箭VS勇士</span></div>
+                <span>110:98</span>
+            </div>-->
+        </div>
+        <!--微博新鲜事结束-->
+    </div>
+
+
+</div>
+
+<!--返回顶部-->
+<div class="toTop"><</div>
+
+<!--底部部分-->
+<footer>
+    <!--四模块-->
+    <div class="box clearfix">
+        <dl>
+            <dt>微博精彩</dt>
+            <dd>
+                <a href="">热门微博</a>
+                <a href="">热门话题</a>
+            </dd>
+            <dd>
+                <a href="">名人堂</a>
+                <a href="">微博会员</a>
+            </dd>
+            <dd>
+                <a href="">微相册</a>
+                <a href="微游戏"></a>
+            </dd>
+            <dd>
+                <a href="">微指数</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>手机玩微博</dt>
+            <dd>
+                <span>
+                    <img src="images/footer_code.jpg" alt="">
+                </span>
+                <a href="">扫码下载，更多版本<br />戳这里</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>认证&合作</dt>
+            <dd>
+                <a href="">申请认证</a>
+                <a href="">开放平台</a>
+            </dd>
+            <dd>
+                <a href="">企业微博</a>
+                <a href="">链接网站</a>
+            </dd>
+            <dd>
+                <a href="">微博标识</a>
+                <a href="">广告服务</a>
+            </dd>
+            <dd>
+                <a href="">微博商学院</a>
+                <a href="">广告代理商</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>微博帮助</dt>
+            <dd>
+                <a href="">常见问题</a>
+            </dd>
+            <dd>
+                <a href="">自助服务</a>
+            </dd>
+        </dl>
+    </div>
+    <!--版权信息-->
+    <div class="links">
+        <div class="friendlinks">
+            <a href="">微博客服</a>
+            <a href="">意见反馈</a>
+            <a href="">舞弊举报</a>
+            <a href="">开放平台</a>
+            <a href="">微博招聘</a>
+            <a href="">新浪网导航</a>
+            <a href="">举报处理大厅</a>
+            <select name="" id="">
+                <option value="中文">中文（简体）</option>
+                <option value="香港">中文（香港）</option>
+                <option value="台湾">中文（台湾）</option>
+                <option value="英语">English</option>
+            </select>
+        </div>
+        <div>
+            <a href="">京ICP证100780号</a>
+            <a href=""> 互联网药品服务许可证</a>
+            <a href=""> 互联网医疗保健许可证</a>
+            <a href="">京网文[2014]2046-296号</a>
+            <a href="">京ICP备12002058号</a>
+            <a href="">增值电信业务经营许可证B2-20140447</a>
+        </div>
+        <div class="warn">
+            <span>Copyright © 2009-2017 WEIBO</span>
+            <a href=""><i></i>北京微梦创科网络技术有限公司京公网安备11000002000019号</a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/base.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

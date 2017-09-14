@@ -1,0 +1,250 @@
+body{
+    background: url("../images/3.jpg");
+    background-size:100%;
+}
+.container{
+    width: 1250px;margin:0 auto;
+}
+span{
+    font:200 12px/28px "微软雅黑";
+}
+/*中间部分*/
+nav{
+    width: 150px;
+    height:600px;
+    background: rgba(0,0,0,.1);
+    padding-top: 15px;
+    margin-left: 130px;
+    float: left;
+    position: absolute;
+    top: 50px;
+}
+nav .nav{
+    padding-left:15px;
+    line-height:32px;
+}
+.nav a{
+    font-size: 12px;
+    color: #fff;
+}
+.nav h3 a{
+    font-size:14px;
+}
+nav .nav:hover{
+    background: rgba(0,0,0,.2);
+}
+nav fieldset{
+    margin-top: 12px;
+    height:12px;
+    padding: 0 0 0 120px;
+    zoom: 1;
+    clear: both;
+    border-top: 1px solid rgba(255,255,255,0.6);
+}
+/*中间加载部分*/
+.main_center{
+    width: 600px;
+    padding-top: 15px;
+    float: left;
+    margin-left:280px;
+    margin-top:50px;
+}
+.main_center .main_container,.send{
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding:20px 0 0 0;
+}
+.main_center .send{
+    padding:5px 10px 10px 10px;
+}
+.send img{
+    display: inline-block;
+}
+.send .tips{
+    float: right;
+    font:200 13px/28px "微软雅黑";
+}
+.send .tips i{
+    font:700 13px/28px "微软雅黑";
+}
+textarea{
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px #F0F0F0;
+    padding:5px 10px;
+    font-size:14px;
+}
+.send a{
+    background: #ffc09f;
+    color: #fff;
+    border: 1px solid #fbbd9e;
+    display: inline-block;
+    height: 28px;
+    line-height: 29px;
+    width: 60px;
+    font-size: 14px;
+    padding:0 10px;
+    border-radius:2px;
+    text-align: center;
+    float: right;
+}
+/*加载部分*/
+.container_top{
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+.container_top span{
+    float: right;
+}
+.main_center .container_top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.main_container>.container_top a{
+    font:700 14px/14px "微软雅黑";
+}
+.container_top img{
+    cursor: pointer;
+}
+.main_container span{
+    display: inline-block;
+    padding-top: 10px;
+}
+.main_container p{
+    font:400 13px/22px "微软雅黑";
+}
+.container_bottom{
+    margin-left:60px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.container_bottom img{
+    width: 100px;
+    height: 100px;
+}
+.main_container .like{
+    height: 38px;
+    line-height:38px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+.like li{
+    width: 24.8%;
+    border-right: 1px solid #ccc;
+}
+.like li:last-child{
+    border-right:none;
+}
+.like li a{
+    font-size:13px;
+}
+.like li a:hover{
+    color: #eb7350;
+}
+/*右侧账户显示*/
+.main_right{
+    margin:65px 130px 0 0;
+    position: absolute;;
+    right:50px;
+}
+.main_right a:hover{
+    color: #eb7350;
+}
+.myAccount{
+    width: 200px;
+    text-align: center;
+    padding:30px 15px 15px 15px;
+    background: url("../images/3.jpg") no-repeat #fff;
+    background-size:100% 50%;
+    margin-bottom:10px;
+}
+.myAccount img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.myAccount a{
+    font:700 14px/15px "微软雅黑";
+    color: #444;
+}
+.myAccount strong:hover{
+    color: #eb7350;
+}
+.myAccount ul{
+    margin-top:10px;
+}
+.myAccount li{
+    width: 65px;
+    height: 33px;
+    border-right:1px solid #ccc;
+}
+.myAccount li:last-child{
+    border:none;
+}
+.myAccount li strong{
+    display: block;
+}
+.friends{
+    width: 200px;
+    padding:15px;
+    background-color: #fff;
+}
+.friends p{
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccc;
+}
+.friendCare{
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+.friendCare img,.comment img{
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    float: left;
+}
+.friendCare a{
+    font-size: 13px;
+    display: block;
+}
+.friendCare div{
+    height: 20px;
+    overflow: hidden;
+}
+/*评论*/
+.comment{
+    background-color: #F2F2F5;
+    border-top: 1px solid #ccc;
+    padding:15px 20px;
+    display: none;
+}
+.comment textarea{
+    padding:9px 10px;
+}
+.comment .commentBtn{
+    background-color: #FFC09F;
+    width: 60px;
+    height: 24px;
+    line-height:25px;
+    border-radius: 2px;
+    color: #fff;
+    float: right;
+}
+.commentBox{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.otherComment{
+    padding:10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.otherComment a{
+    font-size: 13px;
+}
+.commentContent{
+    margin-left:45px;
+    color: #666;
+}
